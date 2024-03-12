@@ -91,6 +91,14 @@ Additional Resources
   | 🌐 `Zephyr Project Website`_
   | 📺 `Zephyr Tech Talks`_
 
+Evaluation Setup
+----------------
+  | Follow the setup guide to setup the environment, and modify the native_sim to use the can controller as in this fork
+  | Run the examples by building it with west build (-p always) -b board project
+  | where board is either the target or native_sim
+  | i.e. to run the simple blinky demo on target, the command was "west build -b nucleo_491re samples/basic/blinky"
+  | and for the can demo, it was using the command "west build -b native_sim samples/drivers/can/counter"
+
 .. _Zephyr Project Website: https://www.zephyrproject.org
 .. _Discord Server: https://chat.zephyrproject.org
 .. _supported boards: https://docs.zephyrproject.org/latest/boards/index.html
